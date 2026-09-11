@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>System Breached</title>
+<style>
+body{margin:0;background:#050505;color:#00ff66;font-family:monospace;display:flex;align-items:center;justify-content:center;min-height:100vh;text-align:left}
+.box{width:min(680px,88%);border:1px solid #00ff66;padding:28px;box-shadow:0 0 25px #00ff6644;background:#000}
+.line{margin:12px 0;font-size:18px}
+.hidden{display:none}.final{color:#ff4d88;font-size:24px;font-weight:bold;text-align:center}
+button{background:#00ff66;color:#000;border:0;padding:10px 18px;font-family:monospace;font-weight:bold;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="box">
+<div id="screen">
+<div class="line">⚠️ SYSTEM BREACHED...</div>
+<div class="line">🔓 Access granted...</div>
+<div class="line">📂 Scanning personal files...</div>
+<div class="line">❤️ Checking secret information...</div>
+<div class="line">WAIT...</div>
+<button onclick="reveal()">CONTINUE</button>
+</div>
+<div id="result" class="hidden">
+<div class="final">😈 I came here to hack you.</div>
+<br>
+<div class="final">But unfortunately...</div>
+<br>
+<div class="final">💀 Your heart is already hacked by me. 😂❤️</div>
+<br>
+<div class="line" style="text-align:center">🔐 HACK COMPLETED SUCCESSFULLY.</div>
+<div class="line" style="text-align:center">— Your Hacker Boyfriend 🕶️❤️</div>
+</div>
+</div>
+<script>
+function reveal(){document.getElementById('screen').classList.add('hidden');document.getElementById('result').classList.remove('hidden')}
+</script>
+</body>
+</html>
